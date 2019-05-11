@@ -1,7 +1,22 @@
 <!DOCTYPE html>
+
+<!-- David Kloepper -->
+<!-- Data Visualization Bootcamp, Cohort 3-->
+<!-- May 11th, 2019-->
+
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139952796-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-139952796-1');
+  </script>
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Bootstrap Visualization Dashboard</title>
@@ -18,8 +33,8 @@
 <body>
   <!-- Navigation Section -->
   <div class="navigation">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Latitude</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand"  href="index.html">Latitude</a>
       <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -63,7 +78,7 @@
             </ol>
           </nav>
           <hr>
-          <p>Click any plot to get an in-depth analysis.</p>
+          <p>Click any plot for a specific analysis:</p>
           <div class="container" style="padding-bottom: 40px;">
             <div class="row">
               <div class="col-lg-6 col-sm-12" style="padding: 30px;">
@@ -89,7 +104,7 @@
               <div class="col-lg-6 col-sm-12" style="padding: 30px;">
                 <div class="title">vs. Wind Speed</div>
                 <a href="wind_speed.html">
-                  <img class="panel" src="/images/Latitude_vs_WindSpeed.png" alt="Wind Speed Graph" title="Latitude vs. Wind Speed">
+                  <img class="panel" src="images/Latitude_vs_WindSpeed.png" alt="Wind Speed Graph" title="Latitude vs. Wind Speed">
                 </a>
               </div>
             </div>

@@ -1,7 +1,22 @@
 <!DOCTYPE html>
+
+<!-- David Kloepper -->
+<!-- Data Visualization Bootcamp, Cohort 3-->
+<!-- May 11th, 2019-->
+
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139952796-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-139952796-1');
+  </script>
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Bootstrap Visualization Dashboard</title>
@@ -18,8 +33,8 @@
 <body>
   <!-- Navigation Section -->
   <div class="navigation">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Latitude</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand"  href="index.html">Latitude</a>
       <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -53,8 +68,14 @@
   <div class="container">
           <div class="box">
             <h3 class="title">Data</h3>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+              </nav>
             <hr>
-            <p>The following table includes all of the data used for plotting during this project.</p>
+            <p>The following table includes all of the data used for plotting during this project. All data was collected on 4/6/2019.</p>
             <br>
     <div class="table-responsive">
     <table class="table table-striped table-bordered table-hover table-condensed">

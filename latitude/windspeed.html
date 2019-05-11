@@ -1,7 +1,22 @@
 <!DOCTYPE html>
+
+<!-- David Kloepper -->
+<!-- Data Visualization Bootcamp, Cohort 3-->
+<!-- May 11th, 2019-->
+
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139952796-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-139952796-1');
+  </script>
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Bootstrap Visualization Dashboard</title>
@@ -18,8 +33,8 @@
 <body>
   <!-- Navigation Section -->
   <div class="navigation">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Latitude</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">Latitude</a>
       <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,18 +70,17 @@
       <div class="col-lg-7 col-md-12">
         <!-- Left box  -->
         <div class="box">
-          <h3 class="title">Wind Speed</h3>
+          <h3 class="title">Latitude vs. Wind Speed</h3>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Cloudiness</li>
+              <li class="breadcrumb-item active" aria-current="page">Wind Speed</li>
             </ol>
           </nav>
           <hr>
           <img src="images/Latitude_vs_WindSpeed.png" alt="Wind Speed Graph">
-          <p>Cloudiness does not show a strong correlation to latitude. The visualization shows a great variety of
-            cloudiness percentages at different latitudes. Therefore, we cannot conclude that there is a conclusive
-            pattern between cloudiness and latitude.</p>
+          <p>There does not appear to be any relationship between wind speed at a location and its latitude. 
+              We can see varying wind speeds ranging across all latitudes and locations.</p>
         </div>
       </div>
       <div class="col-lg-5 col-md-12">
