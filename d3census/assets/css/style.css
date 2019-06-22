@@ -1,6 +1,6 @@
 /* David Kloepper
 Data Visualization Bootcamp, Cohort 3
-June 20th, 2019 */
+June 21st, 2019 */
 
 .iframeContainer {
   padding: 20px;
@@ -16,6 +16,10 @@ html {
 body {
   /* Padding bottom by footer height */
   padding-bottom: 80px;
+}
+
+#headline {
+  text-align: center;
 }
 
 #footer {
